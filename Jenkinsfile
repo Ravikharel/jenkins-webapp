@@ -21,8 +21,6 @@ pipeline{
             }
         }
         stage('Push Image'){
-          
-          }
             steps {
                 withDockerRegistry([credentialsId: 'dockerhub-credentials', url: '']) {
                     sh '''
@@ -39,5 +37,6 @@ pipeline{
                 echo "There was an error!!!"
             }
         }
+    }
 }
 
