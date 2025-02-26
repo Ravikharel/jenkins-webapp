@@ -29,14 +29,14 @@ pipeline{
                 }
             }
         }
-        post { 
+    }
+    post { 
             success{ 
                 echo " Pipeline excuted succesfully!!!"
             }
             failure{ 
                 echo "There was an error!!!"
             }
-        }
     }
 }
 
