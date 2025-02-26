@@ -1,7 +1,7 @@
 pipeline{ 
     agent any 
     environment{ 
-        IMAGE_NAME = "my-web-app"
+        IMAGE_NAME = "ravikharel/jenkins-project"
         CONTAINER_NAME = "web-container"
     }
     stages{ 
